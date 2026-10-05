@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Trip to Chicago</title>
+  <meta name="description" content="A self-paced virtual field trip to Chicago. One city. Many stories.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%88%EF%B8%8F%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fonts are optional: if they don't load, the site falls back to system fonts. -->
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <button type="button" class="skip" data-act="skipMain">Skip to content</button>
+  <header id="topbar" class="topbar" hidden></header>
+  <main id="main" tabindex="-1"></main>
+  <footer class="site-foot">
+    <nav aria-label="About this site">
+      <button type="button" data-footer="about">About this trip</button><span class="sep" aria-hidden="true">|</span>
+      <button type="button" data-footer="sources">Sources</button><span class="sep" aria-hidden="true">|</span>
+      <button type="button" data-footer="a11y">Accessibility</button><span class="sep" aria-hidden="true">|</span>
+      <button type="button" data-footer="teacher">Teacher info</button><span class="sep" aria-hidden="true">|</span>
+      <button type="button" data-footer="help">Help &amp; settings</button>
+    </nav>
+  </footer>
+  <div id="panel" hidden></div>
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+  <div id="player" class="player" role="region" aria-label="Read-aloud controls" hidden></div>
+  <noscript><p style="padding:2rem;font-size:1.2rem">This trip needs JavaScript turned on. Please ask your teacher for help.</p></noscript>
+  <script src="js/content.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
